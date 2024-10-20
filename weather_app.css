@@ -1,0 +1,197 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightslategray;
+}
+
+.screen{
+  background-color: rgb(99, 112, 105);
+  width: 380px;
+  height: 700px;
+  margin-top: -10px;
+}
+
+.başlık{
+  display: flex;
+  height: 55px;
+  width: 380px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  position: fixed;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(210, 210, 10);
+  border-bottom-style: solid;
+}
+
+.aaa{
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-left: 13px;
+  font-family: "Fjalla One";
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bbb{
+  margin-top:0;
+  margin-bottom: 0;
+  margin-left: 13px;
+  font-family: "Exo 2";
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.sol{
+  background-color: white;
+  border-style: none;
+  margin-right: 13px;
+}
+
+.sol:hover{
+  cursor: pointer;
+}
+.menu-icon{
+  width: 27px;
+  height: 27px;
+  margin-top: 11px;
+}
+
+.grid{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+
+}
+
+.box{
+  width: 150px;
+  height: 150px;
+  margin-left:20px;
+  margin-top: 30px;
+  background-color: rgb(156, 194, 156);
+  border-radius: 22px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.20);
+}
+
+.search{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.search-iconn{
+  background-color: white;
+  height: 35px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow:inset 3px 3px 5px rgba(0, 0, 0, 0.20);
+  z-index: 1;
+}
+
+.search-icon{
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.search-bar{
+  width: 250px;
+  height: 35px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-style: none;
+  text-align: center;
+  outline-style: none;
+  box-shadow:inset -3px 3px 5px  rgba(0, 0, 0, 0.20);
+}
+
+.dörtlü{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  margin-left: 58px;
+  margin-top: 50px;
+}
+
+.kutu{
+  position: relative;
+  background-color:rgb(156, 194, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: -3px 3px 5px  rgba(0, 0, 0, 0.20);
+  transition: 0.15s;
+}
+
+.kutu-icon{
+  height: 26px;
+  width: 26px;
+}
+
+.kutu:hover{
+  box-shadow: inset 3px -3px 5px  rgba(0, 0, 0, 0.20);
+}
+.kutu:active{
+  cursor: pointer;
+}
+
+.grid-icon{
+  width: 26px;
+  height: 26px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.grid-iconn{
+  width: 34px;
+  height: 34px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.text{
+  width: 70px;
+  margin-left: 24px;
+  font-family:"Exo 2";
+  font-weight: bolder;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.sol .tooltip,
+.kutu .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Arial;
+}
+
+.sol:hover .tooltip,
+.kutu:hover .tooltip{
+  opacity: 1;
+}
